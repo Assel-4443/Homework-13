@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Lover's Interactive Page</title>
+  <link rel="stylesheet" href="proj.css">
+</head>
+<body>
+  
+  <!-- Форма с валидацией -->
+  <section class="form-section">
+    <h2>Присоединяйтесь к читательскому клубу</h2>
+    <form id="signUpForm">
+      <input type="text" id="name" placeholder="Введите свое имя" required />
+      <input type="text" id="favoriteBook" placeholder="Напишите вашу любимую книгу" required />
+      <button type="submit">Вход</button>
+      <p id="formError" class="error-message"></p>
+    </form>
+  </section>
+
+  <!-- Модальное окно -->
+  <button id="openModalBtn">Книга дня</button>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModalBtn" class="close-btn">&times;</span>
+      <h2>Книга дня: "1984"</h2>
+      <p>Наряду с романами «Мы» Евгения Замятина, «451 градус по Фаренгейту» Рэя Брэдбери, «О дивный новый мир» Олдоса Хаксли «1984» считают одним из образцов антиутопии. Книга была издана в 1949 году.</p>
+      <p>"По мнению Джорджа Оруэлла, нет ничего ужаснее тотальной несвободы. Она уничтожает в человеке все духовные потребности, чувства, мысли, оставляя только постоянный страх и единственный выбор – между молчанием и смертью"</p>
+    </div>
+  </div>
+
+  <!-- Слайдер изображений -->
+  <section id="slider-section" class="slider-section">
+    <h2>Популярные книги</h2>
+    <div id="slider" class="slider">
+      <img src="grey.jpg" class="slider-image show" alt="Портрет Дориана Грея" />
+      <img src="wuthering_heights.jpg" class="slider-image" alt="Грозовой перевал" />
+      <img src="little_women.jpg" class="slider-image" alt="Маленькие женщины" />
+    </div> 
+      <button id="prevBtn" class="prev-btn">←</button>
+    <button id="nextBtn" class="next-btn">→</button>
+  </section>
+
+  <script src="proj.js"></script>
+</body>
+</html>
